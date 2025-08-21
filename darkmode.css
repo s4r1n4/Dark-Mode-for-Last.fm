@@ -1,0 +1,977 @@
+/* =========================================
+   LAST.FM DARK MODE
+   ========================================= */
+
+/* ========== Colours ========== */ 
+:root {
+  --main_bg: #111111;
+  --main_bgmoregrey: #1c1c1c;
+  --main_bar: #11172e;
+  --main_basepurple: #1e1e2f;
+  --main_babypink: #ffcae0;
+  --main_btngrey: #ccc;
+  --main_btnhover: #ffd04f;
+  --main_btnyellow: #fb0;
+  --main_ddbg: #1a1a1a;
+  --main_fmred: #d92323;
+  --main_funkypurple: #b68ef1;
+  --main_headeryellow: #f4d35e;
+  --main_lightgrey: #333;
+  --main_lighter: #273469;
+  --main_midblue: #1e2749;
+  --main_text: #FAFAFF;
+  --main_textgrey: #dadae3;
+  --main_textpurple: #dedeff;
+  --main_yellowone: #ffcc80;
+}
+
+/* =========================================
+   BASE STYLES
+   ========================================= */
+
+html, body,
+body[class*="namespace--settings_"] {
+  background-color: var(--main_bar);
+  color: var(--main_text);
+}
+
+body {
+  background-color: var(--main_bg);
+  color: var(--main_text) !important;
+}
+.two-column-layout .main-content {
+  background-image: transparent !important;
+}
+
+.main-content {
+  background: var(--main_bg) !important;
+}
+
+header, footer, .header, .footer {
+  background-color: var(--main_bar) !important;
+}
+
+a, .header, .header-follower-btn {
+  color: var(--main_textgrey) !important;
+}
+
+
+text, element.style {
+  fill: var(--main_text) !important;
+  color: var(--main_text) !important;
+}
+.modal-body {
+    background: var(--main_bg) !important;
+}
+
+
+div:not(.country):not(.world_bg):not(.top-item-overview--artist):not(.top-item-overview--track):not(.top-item-overview--album):not(.report-box-container),
+section,
+article {  
+  background-color: transparent;
+}
+.two-column-layout .container {
+  background-image: none !important;
+  background-position: 650px 0;
+  background-repeat: repeat-y;
+  background-size: 1px 1px, 100% 1px;
+}
+#adSkinRight, #adSkinLeft {
+  background-image: none !important;
+  background-color: var(--main_bg) !important;
+}
+
+
+.header--overview.header--with-avatar {
+  background-color: var(--main_bg);
+}
+
+.top-bar, .top-bar--v2 {
+  background: var(--main_bar) !important;
+  color: #fff;
+  display: block;
+}
+
+
+.alert-warning {
+  background-color: #1a1a1a !important;
+  color: var(--main_fmred) !important;
+}
+
+.content-form legend {
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    color: var(--main_text) !important;
+}
+.content-form .form-horizontal .control-label {
+  color: var(--main_textgrey) !important;
+}
+
+.content-form .form-control,
+.content-form input[type=date],
+.content-form input[type=email],
+.content-form input[type=number],
+.content-form input[type=password],
+.content-form input[type=text],
+.content-form input[type=url],
+.content-form select,
+.content-form textarea {
+  background-color: #25262b !important;
+  color: var(--main_text) !important;
+  box-shadow: none !important;
+  border: transparent !important;
+}
+
+/* =========================================
+   REPORTS
+   ========================================= */
+
+.report-box-container {
+  background: var(--main_bg) !important;
+  color: #fafafa !important;
+}
+
+.report-box-container--overview {
+  background: var(--main_babypink) !important;
+  color: #1a1b1e !important;
+}
+
+.user-dashboard-layout--version-4 .listening-report-brick-inner:hover { 
+  background: #2c2e31 !important; 
+}
+
+
+.user-dashboard-layout--version-4 .listening-report-brick-inner--highlight.listening-report-highlight--down {
+    background: rgba(247,20,20,.1) !important;
+}
+
+.user-dashboard-layout--version-4 .listening-report-brick-inner--highlight.listening-report-highlight--down:hover {
+    background: rgba(247,20,20,.25) !important;
+}
+
+
+.user-dashboard-layout--version-4 .listening-report-brick-inner--highlight.listening-report-highlight--up {
+    background: rgba(0,153,102,.1) !important;
+}
+
+.user-dashboard-layout--version-4 .listening-report-brick-inner--highlight.listening-report-highlight--up:hover {
+    background: rgba(0,153,102,.25) !important;
+}
+
+
+.report-box-container--overview text {
+  fill: black !important;
+  color: black !important;
+}
+
+.report-share-modal,
+.user-dashboard-layout--version-4 .card--user-dashboard-upsell {
+  background: var(--main_bg) !important;
+  color: var(--main_textgrey) !important;
+}
+
+.report-share-modal--btn {
+  background-color: var(--main_babypink) !important;
+}
+
+/* =========================================
+   LIBRARY, CHARTS & TABLES
+   ========================================= */
+
+/* Library + Other Tabs */
+.scrobble-table rect {
+    fill: transparent !important;
+}
+
+.highcharts-container > svg > g.highcharts-series-group .highcharts-series-0 > a > rect, .highcharts-container > svg > g.highcharts-series-group .highcharts-series-1 > a > rect > a > rect .front{
+fill: #8e80ff !important;
+opacity: 0.5;
+}
+.highcharts-grid.highcharts-yaxis-grid{
+  filter: brightness(0.25) !important;
+  opacity: (0.5) !important;
+}
+
+.anhv1 .date-range-picker-content, .anhv1 .date-range-picker-content ul {
+  background: var(--main_bg) !important;
+  color: var(--main_textgrey) !important;
+}
+.date-range-picker-presets a:active, body:not([data-whatinput=touch]) .date-range-picker-presets a:focus, body:not([data-whatinput=touch]) .date-range-picker-presets a:hover {
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+}
+
+#highcharts-bvh09p4-3 > svg > g.highcharts-series-group > g.highcharts-series.highcharts-series-0.highcharts-bar-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover > a:nth-child(4) > rect {
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+  filter: invert(1) !important;
+}
+.tooltip-dark-box {
+  fill: var(--main_bg) !important;
+}
+.highcharts-tooltip text {
+  fill: var(--main_text) !important;
+}
+
+.highcharts-tooltip-box {
+  fill: var(--main_bg) !important;
+}
+
+.user-dashboard-tooltip{
+  background-color: var(--main_bg) !important;
+  color: var(--main_text) !important;
+}
+
+.user-list-shared-artists {
+    border-top: 1px solid var(--main_bgmoregrey) !important
+}
+
+.section-with-separator:after {
+  background-color: var(--main_bg) !important;
+}
+
+
+#highcharts-p1es6wu-0 > svg > rect.highcharts-background{
+  fill: none !important;
+}
+
+
+.resource-external-link {
+  border-bottom: transparent !important;
+}
+#explain-scrobblingdesktop{
+  background-color: var(--main_bg) !important;
+  color: var(--main_text) !important;
+}
+
+.highcharts-background {
+    fill: none !important;
+}
+.highcharts-plot-bands-0 path {
+    fill: #141414 !important;
+}
+
+.globalchart .globalchart-item:first-child { 
+background: rgba(0, 0, 0, .5) !important; 
+color: var(--main_text);
+} 
+
+
+.globalchart .globalchart-item { 
+background-color: var(--main_bg); 
+box-shadow: 0 1px var(--main_bgmoregrey), inset 0 -1px var(--main_bgmoregrey) !important; 
+min-height: 72px; }
+
+.recs-feed .context {
+    box-shadow: inset 1px 0 var(--main_bgmoregrey),inset -1px -1px var(--main_bgmoregrey) !important;
+}
+
+/* =========================================
+   LIVE / KERVE
+   ========================================= */
+
+/* Live */
+.world_img {
+    filter: brightness(0) grayscale(1) !important;
+}
+.world_bg {
+  background: #111;
+}
+
+.kerve .alltime_genre, .kerve .alltime_genre a {
+    color: var(--main_fmred) !important;
+}
+
+.dashbody .kerve .genretodaybar {
+    background: #1e1e1e !important;
+}
+
+.dashbody .kerve .world_x  {
+    background: #a2a2a2 !important;
+    border-bottom: 1px solid var(--main_lightgrey)  !important;
+    border-top: 1px solid var(--main_lightgrey) !important;
+}
+
+.dashbody .kerve .world_y {
+    background: #a2a2a2 !important;
+    border-left: 1px solid var(--main_lightgrey) !important;
+    border-right: 1px solid var(--main_lightgrey) !important;
+}
+
+.kerve .genretoday_count {
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+
+.dashbody .kerve .spikewrap .bubble_name {
+    background: var(--main_fmred) !important;
+}
+.dashbody .kerve .spikewrap .bubble_number {
+    background: #000 !important;
+    border: 2px solid #666;
+}
+.dashbody .kerve .venn .handle{
+    background: var(--main_bg) !important;
+}
+
+
+.dashbody .kerve .venn_mask {
+    background-image: url("/static/images/kerve/venn_mask_dark.e0e4fc7f208d.png");
+    filter: invert(1) brightness(0.067);
+    background-color: rgba(0, 0, 0, .5) !important;
+}
+
+.kerve .venn .handle_hover.visible, .kerve .venn .handle_hover.visible2 {
+    border-radius: 49px;
+    filter: alpha(opacity=100);
+    height: 98px;
+    left: -35px;
+    -khtml-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
+    top: -35px;
+    width: 98px;
+}
+
+.dashbody .kerve .venn1 .handle_hover {
+    background: rgba(193,25,25,.35) !important;
+}
+
+.kerve .venn2 .handle_hover {
+    background: rgba(0,102,255,.25) !important;
+}
+
+
+.kerve .venn .handle_hover {
+    border-radius: 20px;
+    filter: alpha(opacity=0);
+    left: 0;
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    top: 0;
+    transition: all .3s cubic-bezier(0.68, -0.55, 0.27, 1.55) !important;
+}
+
+
+
+/* =========================================
+   ADS & WRAPPER STYLES
+   ========================================= */
+
+/* Ads */ 
+tonefuse-ad td:nth-child(3) > div {
+  background-color: var(--main_text) !important;
+}
+tonefuse-ad td:nth-child(1) > div {
+  background-color: var(--main_text) !important;
+}
+tonefuse-ad > table > tbody > tr > td:nth-child(2) > div:nth-child(3) > div{
+  background-color: var(--main_text) !important;
+}
+tonefuse-ad td:nth-child(2) > div:nth-child(1),
+tonefuse-ad td:nth-child(2) > div:nth-child(1) * {
+  filter: invert(0.9) !important;
+}
+.wrapper {
+  filter: invert(1 grayscale(100%)) !important;
+}
+.related-ads {
+  filter: invert(1) grayscale(100%) !important;
+}
+
+/* =========================================
+   SHOUTBOX / MESSAGES
+   ========================================= */
+
+/* Shoutbox */
+.shout-form {
+    border-bottom: none !important;
+    position: relative;
+}
+
+.shout {
+    border-bottom: 1px solid var(--main_bgmoregrey) !important;
+}
+
+/* Messages */
+
+.inbox-notifications .inbox-notifications__item--hover{
+    box-shadow: inset 0 -1px var(--main_lightgrey) !important;
+}
+
+.inbox-notifications .inbox-notifications__item--hover:active, body:not([data-whatinput=touch]) .inbox-notifications .inbox-notifications__item--hover:focus, body:not([data-whatinput=touch]) .inbox-notifications .inbox-notifications__item--hover:hover {
+    background-color: var(--main_bgmoregrey) !important;
+}
+
+.inbox .inbox-table tr {
+    box-shadow: inset 0 -1px var(--main_bgmoregrey) !important;
+}
+
+/* =========================================
+   CHARTLISTS / TABLE ROWS
+   ========================================= */
+
+/* ========== Chartlists / Tables ========== */
+/* Entire row: now playing */
+tr.chartlist-row--now-scrobbling {
+  background-color: var(--main_lighter) !important;
+  color: var(--main_yellowone) !important;
+}
+
+.chartlist-row {
+  border: none !important;
+  box-shadow: none !important;
+  background-clip: border-box !important;
+}
+.chartlist-count-bar-slug {
+  background-color: var(--main_midblue) !important;
+}
+
+.chartlist-row:hover .chartlist-count-bar-slug {
+  background-color: var(--main_basepurple) !important;
+}
+
+.chartlist-row:hover {
+  background-color: var(--main_midblue) !important;
+}
+
+ /* Remove after line dividers */
+.chartlist-row::after {
+  content: none !important;
+  display: none !important;
+}
+
+/* remove line between adjacent rows */
+.chartlist-row + .chartlist-row {
+  border-top: 1px solid transparent !important; /* other chartlist borders */
+}
+
+.chartlist--with-more .chartlist-row {
+    border-top: 1px solid transparent !important; /* middle border */
+}
+
+.chartlist-row--highlight, .chartlist-row--now-scrobbling {
+    background-color: var(--main_bgmoregrey) !important;
+}
+
+/* =========================================
+   BUTTONS
+   ========================================= */
+
+/* ========== Buttons ========== */
+.section-settings-toggle::before {
+    filter: invert(0.9) !important;
+}
+
+.share-chart .share-button-profile::before {
+    filter: invert(0.9) !important;
+}
+
+.dropdown-menu-clickable-button::after {
+    filter: invert(0.9) !important;
+}
+
+.chartlist-more-button:hover::before {
+    filter: invert(0.9) !important;
+}
+
+.chartlist .lazy-buylinks-toggle:hover::before {
+    filter: invert(0.9) !important;
+}
+
+.change-username-faded h2:after {
+    filter: invert(0.9) !important;
+}
+.change-username-upsell {
+    background-color: transparent !important;
+}
+.pagination-next a:before {
+  filter: invert(0.9) !important;
+}
+.featured-item-art .image-overlay-playlink-link:before {
+    background-color: hsla(0, 0%, 100%, .40);
+    background-image: url(/static/images/icons/play_dark_24.44cbb56c2236.png);
+    transition: background-color .1s;
+}
+.header .header-message-user:hover {
+    filter: brightness(0) invert(1) grayscale(1) !important;
+
+}
+
+.btn-shortcut:before {
+  filter: invert(0.9) !important;
+}
+
+.content-form .form-group .source-icon-list label[data-affiliate=spotify]:after {
+  filter: invert(0.9) !important;
+}
+
+.events-filter-recommended {
+    color: var(--main_btngrey) !important;
+    padding-right: 17px;
+}
+
+.js .events-filter-location.disclose-active:after, .js .events-filter-location.dropdown--open:after, .js .events-filter-location:after {
+    background-image: url("/static/images/icons/dropdown_arrow_16@2x.e783136f2b95.png");
+    filter: invert(0.9) !important;
+}
+
+.js .date-picker-button.disclose-active:after, .js .date-picker-button.dropdown--open:after, .js .date-picker-button:after {
+    background-image: url("/static/images/icons/dropdown_arrow_16@2x.e783136f2b95.png");
+    filter: invert(0.9) !important;
+}
+
+.search-form .search-submit:before{
+    background-image: url("/static/images/icons/search/search_232323_16@2x.21ba32cf82c7.png");
+    filter: invert(0.9) !important;
+}
+
+.more-item--track:before {
+  filter: invert(0.9) !important;
+}
+.more-item--artist:before {
+  filter: invert(0.9) !important;
+}
+.more-item--obsession:before {
+  filter: invert(0.9) !important;
+}
+.more-item--report:before {
+  filter: invert(0.9) !important;
+}
+.shout-reply{
+  filter: brightness(0.5) !important;
+}
+
+.shout-reply:hover {
+  filter: brightness(1) !important;
+}
+
+/* Play button */
+tr.chartlist-row--now-scrobbling .chartlist-play-button {
+  background-color: transparent !important;
+  color: #c8a1e3 !important;
+}
+
+.btn-primary {
+  background-color: var(--main_btnyellow) !important;
+  color: black !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--main_btnhover) !important;
+}
+
+.btn-secondary {
+  background-color: var(--main_text) !important;
+  color: var(--main_bg) !important;
+}
+.btn-secondary:hover {
+  background-color: var(--main_textgrey) !important;
+}
+
+.btn-shortcut {
+  box-shadow: inset 0 0 0 1px var(--main_textgrey) !important;
+  color: var(--main_text) !important;
+}
+
+.listening-report-cta-button {
+  background-color: var(--main_btnyellow) !important;
+  color: var(--main_bg) !important;
+}
+
+.listening-report-cta-button:hover {
+  background-color: var(--main_btnhover) !important;
+}
+
+body:not([data-whatinput=touch]) .btn-shortcut:hover {
+  box-shadow: inset 0 0 0 1px var(--main_text) !important;
+  color: var(--main_textgrey) !important;
+}
+
+.btn-subscribe {
+  background-color: var(--main_btnyellow) !important;
+  color: black !important;
+}
+
+.btn-subscribe:hover {
+  background-color: var(--main_btnhover) !important;
+}
+.subscribe-cta a {
+    background-color: var(--main_btnyellow);
+    color: var(--main_bg) !important;
+}
+
+.subscribe-cta a:hover {
+    background-color: var(--main_btnhover);
+    color: var(--main_bg) !important;
+}
+
+.site-auth-item .join-cta-button {
+  color: var(--main_bg) !important;
+}
+
+.more-link a:before {
+  filter: grayscale(1) !important;
+}
+
+
+/* =========================================
+   PROMO / CARDS
+   ========================================= */
+
+/* ========== Promo / Cards ========== */
+a.listening-report-promo {
+  background-color: var(--main_basepurple) !important; 
+  color: var(--main_text) !important;           
+  border: 1px solid transparent !important;
+}
+
+/* Text inside the promo */
+a.listening-report-promo span {
+  color: var(--main_text) !important;
+}
+
+.promo-v3 .listening-report-promo-title {
+    color: var(--main_textgrey) !important;
+}
+
+.promo-v3 .listening-report-promo-date:after {
+    filter: none !important;
+}
+
+/* Add hover effect */
+a.listening-report-promo:hover {
+  background-color: var(--main_midblue) !important;
+}
+
+/* =========================================
+   SECONDARY NAV
+   ========================================= */
+
+/* ========== Secondary Navigation ========== */
+/* Transparent background for the secondary nav container */
+nav.secondary-nav {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Transparent nav item backgrounds */
+.secondary-nav .navlist-item {
+  background-color: transparent !important;
+}
+
+.secondary-nav-item-link--active:after,
+a.secondary-nav-item-link:focus:after,
+a.secondary-nav-item-link:hover:after {
+  background-color: var(--main_btnyellow) !important;
+}
+
+/* =========================================
+   MASTHEAD / HEADER
+   ========================================= */
+
+/* ========== Masthead / Header ========== */
+nav.masthead,
+nav.masthead {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.masthead-search-field {
+  background-color: var(--main_bg) !important;
+  border: none !important;
+  border: 0;
+  border-color: transparent;
+  box-shadow: none !important;
+  outline: none !important;
+  text-box: none !important;
+}
+
+.masthead-search-submit {
+  color: var(--main_text) !important;
+  background-color: var(--main_midblue) !important;
+}
+
+.masthead-inner-wrap {
+  background: transparent !important
+}
+
+body:not(.js-focus-visible) body:not([data-whatinput=touch]) .masthead-search-submit:focus, body:not([data-whatinput=touch]) .masthead-search-submit .focus-visible, body:not([data-whatinput=touch]) .masthead-search-submit:hover {
+  background-color: var(--main_btnyellow);
+  color: var(--main_text);
+}
+.masthead-search-form {
+  background-color: var(--main_bg) !important;
+}
+
+.masthead-search-toggle.disclose-active {
+  background-color: var(--main_bg) !important;
+  z-index: 2 !important;
+}
+
+.auth-dropdown-menu,
+.auth-dropdown-menu * {
+  background-color: var(--main_bg) !important;
+}
+
+
+nav.masthead a,
+nav.masthead button,
+nav.masthead .username,
+nav.masthead .scrobble-count,
+nav.masthead .masthead-pro-text,
+nav.masthead .masthead-nav-control {
+  color: var(--main_text) !important; 
+}
+
+.header--overview.header--with-avatar {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+
+}
+
+/* =========================================
+   HEADINGS & TEXT
+   ========================================= */
+
+/* ========== Headings / Text ========== */
+h2 {
+  color: var(--main_headeryellow);
+}
+
+h2:first-child {
+  color: var(--main_headeryellow);
+}
+
+.mimic-link {
+    color: var(--main_text) !important;
+}
+
+/* =========================================
+   FORMS
+   ========================================= */
+
+/* ========== Forms ========== */
+/* For the shoutbox textarea */
+textarea.js-shout-input {
+  background-color: transparent !important; 
+  color: var(--main_text) !important;              
+  border: 1px solid transparent !important; 
+}
+
+textarea.js-shout-input::placeholder {
+  color: #AAB2C5 !important; 
+}
+
+/* =========================================
+   TASTEOMETER / LABS
+   ========================================= */
+
+/* ========== Tasteometer / Labs ========== */
+.tasteometer {
+  color: var(--main_textgrey) !important; /* Light text */
+}
+
+.tasteometer a {
+  color: #8492ba !important; 
+  text-decoration: none;
+}
+
+.tasteometer-donut-base {
+  fill: var(--main_lightgrey) !important;
+}
+
+
+.tasteometer a:hover {
+  color: var(--main_text) !important; 
+  text-decoration: underline;
+}
+
+.labs-logo {
+  color: #b68ef1 !important; 
+}
+
+.labs-cta .description {
+  color: var(--main_text) !important; 
+}
+
+.labs-cta .btn-primary.btn-labs-cta {
+  background-color: var(--main_basepurple) !important;
+  color: var(--main_text) !important;
+}
+
+.labs-cta .btn-primary.btn-labs-cta:hover {
+  color: var(--main_textgrey) !important;
+}
+
+.tasteometer-avatar img {
+    border: 2px solid var(--main_bg) !important;
+}
+
+
+/* =========================================
+   PLAY BUTTONS / STATION PILL
+   ========================================= */
+
+/* ========== Play Buttons ========== */
+/* Scrobble play button */
+.chartlist-play-button::before {
+  background-color: var(--main_text) !important;
+}
+.chartlist-play-button:hover::before {
+  background-color: var(--main_textpurple) !important; /* replace with hover color if desired */
+}
+
+/* Right side play button */
+.stationlink-list .stationlink:before {
+  background-color: var(--main_text) !important;
+}
+
+.stationlink-list .stationlink:hover::before {
+  background-color: var(--main_textpurple) !important; 
+}
+
+
+/* =========================================
+   LOADING SPINNER
+   ========================================= */
+
+/* ========== Loading Spinner ========== */
+/* Target the loading gif and invert it */
+.profile-cards-spinner {
+  filter: invert(1);
+}
+.your-progress-component .loading {
+  filter: invert(1);
+}
+
+.lazy-shoutbox.async-content-loading {
+  filter: invert(1);
+}
+[data-show-more-loading] .show-more a:before{
+  filter: invert(1);
+}
+
+
+/* =========================================
+   DROPDOWNS & NAVLISTS
+   ========================================= */
+
+/* ========== Dropdown Menus ========== */
+/* Custom dropdown menu style */
+.dropdown-menu-clickable {
+  background: var(--main_ddbg) !important;
+  color: var(--main_text) !important;     
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
+}
+
+
+/* Individual items inside the menu */
+.dropdown-menu-clickable .dropdown-menu-clickable-item {
+  color: var(--main_text);
+  background-color: var(--main_ddbg) !important;  
+  text-decoration: none;
+}
+
+/* Hover style for all items, including selected */
+.dropdown-menu-clickable .dropdown-menu-clickable-item:hover,
+dropdown-menu-clickable .dropdown-menu-clickable-item.dropdown-menu-clickable-item--selected:hover {
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+}
+
+/* Selected/active item default state */
+.dropdown-menu-clickable .dropdown-menu-clickable-item.dropdown-menu-clickable-item--selected {
+  background-color: transparent; 
+  color: var(--main_text);               
+}
+
+/* Dropdown button with & without focus/hover */
+
+.dropdown-menu-clickable-button {
+color: var(--main_btngrey) !important;
+}
+
+.dropdown-menu-clickable-button:focus,
+.dropdown-menu-clickable-button:hover {
+  color: var(--main_textgrey) !important;
+}
+/* Navlist dropdown container */
+.navlist-hidden-list-wrap {
+  background: var(--main_ddbg) !important;
+  background-color: var(--main_ddbg) !important;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 999;
+}
+
+/* The ul inside the dropdown */
+.navlist-hidden-list {
+  background-color: var(--main_ddbg) !important;
+  background: var(--main_ddbg) !important;   
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.5) !important;
+  border-radius: 8px;
+  padding: 6px 0 !important;
+  margin: 0;
+  list-style: none; 
+}
+/* Individual items */
+ul.navlist-hidden-list li a {
+  display: block;
+  padding: 8px 16px;
+  color: var(--main_text) !important;
+  background-color: transparent !important;
+  text-decoration: none;
+}
+
+/* Hover effect */
+ul.navlist-hidden-list li a:hover {
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+}
+
+/* Focus for keyboard navigation */
+ul.navlist-hidden-list li a:focus {
+  outline: none;
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+}
+
+/* Scrobble dropdown */
+
+.more-item--obsession:hover{
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+
+}
+.more-item--delete:hover {
+  background-color: var(--main_lightgrey) !important;
+  color: var(--main_headeryellow) !important;
+}
+
+
+/* Misc Dropdowns */
+
+.date-picker-content{
+  background-color: var(--main_ddbg) !important;
+}
+.anhv1 .events-filter-location-dropdown {
+  background-color: var(--main_ddbg) !important;
+}
+
+
+/* =========================================
+   MISC
+   ========================================= */
+
+/* ========== Misc ========== */
+.stationlink-list .stationlink::after {
+  border-bottom: none !important;
+}
+.more-item--delete {
+  color: var(--main_fmred) !important
+}

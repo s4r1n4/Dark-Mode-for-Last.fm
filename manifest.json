@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Last.fm Dark Mode",
+  "version": "1.2",
+  "description": "Turn Last.fm dark with this extension for a sleek, eye-friendly listening experience.",
+  "permissions": [],
+  "host_permissions": ["*://*.last.fm/*"],
+  "action": { "default_popup": "popup.html" },
+  "content_scripts": [
+    {
+      "matches": ["*://*.last.fm/*"],
+      "css": ["darkmode.css"],
+      "run_at": "document_start"
+    }
+  ]
+}
