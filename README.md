@@ -35,4 +35,4 @@ The single purpose of this extension is to apply a dark mode theme to Last.fm fo
 ---
 
 ## License
-MIT License  
+GNU GENERAL PUBLIC LICENSE
