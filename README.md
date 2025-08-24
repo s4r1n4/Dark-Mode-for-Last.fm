@@ -26,6 +26,7 @@ It improves readability and reduces eye strain while keeping all Last.fm feature
 
 ## Installation
 - [Chrome Web Store](https://chromewebstore.google.com/detail/lastfm-dark-mode/mndngdcdliighjpomikpipjpplmnhmlc)
+Firefox version will be available soon.
 
 ---
 
