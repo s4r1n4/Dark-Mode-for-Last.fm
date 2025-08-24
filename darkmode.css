@@ -64,6 +64,10 @@ text, element.style {
     background: var(--main_bg) !important;
 }
 
+.anhv1 .share-chart .share-block, .anhv1 .share-chart .share-block ul {
+    background-color: var(--main_ddbg) !important;
+}
+
 
 div:not(.country):not(.world_bg):not(.top-item-overview--artist):not(.top-item-overview--track):not(.top-item-overview--album):not(.report-box-container),
 section,
@@ -187,10 +191,13 @@ article {
 fill: #8e80ff !important;
 opacity: 0.5;
 }
+
+
 .highcharts-grid.highcharts-yaxis-grid{
   filter: brightness(0.25) !important;
   opacity: (0.5) !important;
 }
+
 
 .anhv1 .date-range-picker-content, .anhv1 .date-range-picker-content ul {
   background: var(--main_bg) !important;
@@ -201,11 +208,7 @@ opacity: 0.5;
   color: var(--main_headeryellow) !important;
 }
 
-#highcharts-bvh09p4-3 > svg > g.highcharts-series-group > g.highcharts-series.highcharts-series-0.highcharts-bar-series.highcharts-color-0.highcharts-tracker.highcharts-series-hover > a:nth-child(4) > rect {
-  background-color: var(--main_lightgrey) !important;
-  color: var(--main_headeryellow) !important;
-  filter: invert(1) !important;
-}
+
 .tooltip-dark-box {
   fill: var(--main_bg) !important;
 }
@@ -407,6 +410,12 @@ tonefuse-ad td:nth-child(2) > div:nth-child(1) * {
     box-shadow: inset 0 -1px var(--main_bgmoregrey) !important;
 }
 
+.inbox .inbox-table td {
+    box-shadow: none !important;
+
+}
+
+
 /* =========================================
    CHARTLISTS / TABLE ROWS
    ========================================= */
@@ -546,6 +555,14 @@ tr.chartlist-row--now-scrobbling {
   filter: brightness(1) !important;
 }
 
+
+#share-library-artist > div.clearfix > ul > li:nth-child(2) > a > img {
+  filter: invert(0.9) !important;
+}
+
+#share-library-artist > div.clearfix > ul > li:nth-child(1) > a > img {
+  filter: invert(0.9) !important;
+}
 /* Play button */
 tr.chartlist-row--now-scrobbling .chartlist-play-button {
   background-color: transparent !important;
@@ -974,4 +991,41 @@ ul.navlist-hidden-list li a:focus {
 }
 .more-item--delete {
   color: var(--main_fmred) !important
+}
+
+/* ================================
+    last.fm PRO
+  ================================= */
+.highcharts-series-group  .highcharts-series.highcharts-series-2.highcharts-line-series path.highcharts-graph {
+  stroke: #1a1b1e !important
+}
+.highcharts-legend-item.highcharts-line-series.highcharts-color-undefined.highcharts-series-2 path.highcharts-graph{
+  stroke: #1a1b1e !important
+}
+
+.user-dashboard-layout--version-4 .user-dashboard-musical-matches .header-metadata-display button {
+  color: #6565d6 !important;
+}
+
+.highcharts-tooltip span {
+  color: var(--main_text) !important;
+
+}
+
+.user-dashboard--monthly .report-box-container--overview {
+    background: #1a1b1e !important;
+    color: var(--main_babypink) !important;;
+}
+
+.user-dashboard--monthly .report-box-container--overview text {
+  fill: var(--main_babypink) !important;
+  color: var(--main_babypink) !important;
+}
+
+
+.report-headline-border {
+    background-color: var(--main_babypink) !important;
+    background-image: none;
+    -webkit-mask-image: url(/static/images/listening-report/v4/bg-lines-FFCACE.4268c8cee561.svg) !important;
+    mask-image: url(/static/images/listening-report/v4/bg-lines-FFCACE.4268c8cee561.svg) !important;
 }
