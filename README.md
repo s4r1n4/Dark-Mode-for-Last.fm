@@ -6,11 +6,11 @@ It improves readability and reduces eye strain while keeping all Last.fm feature
 
 ## Screenshots
 
-![](images/ss1.png)
+![](pictures/ss1.png)
 
-![](images/ss2.png)
+![](pictures/ss2.png)
 
-![](images/ss4.png)
+![](pictures/ss4.png)
 
 
 ---
