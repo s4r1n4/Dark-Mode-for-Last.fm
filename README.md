@@ -3,6 +3,7 @@
 A simple Chrome extension that applies a dark mode theme to [last.fm](https://www.last.fm).  
 It improves readability and reduces eye strain while keeping all Last.fm features fully accessible.  
 
+
 ## Screenshots
 
 ![](images/ss1.png)
